@@ -146,6 +146,7 @@ body {
     color: var(--text-secondary);
     font-size: 1.1rem;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 .social-links {
@@ -264,6 +265,7 @@ body {
 
 .role-bullets li {
     margin-bottom: 5px;
+    text-align: justify;
 }
 
 .role-bullets li strong {
@@ -317,6 +319,7 @@ body {
     font-size: 0.95rem;
     margin-bottom: 20px;
     flex-grow: 1; /* Pushes tech-stack to bottom */
+    text-align: justify;
 }
 
 .tech-stack {
@@ -365,6 +368,7 @@ body {
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /* Skills */
@@ -536,6 +540,7 @@ body {
         color: #000;
         max-width: 100%;
         margin-bottom: 5px;
+        text-align: justify;
     }
 
     .code-block {
@@ -622,6 +627,7 @@ body {
         font-size: 10pt;
         margin-bottom: 2px;
         line-height: 1.3;
+        text-align: justify;
     }
 
     .role-bullets li strong {
@@ -708,6 +714,7 @@ body {
         font-size: 10pt;
         color: #000;
         line-height: 1.3;
+        text-align: justify;
     }
 
     /* Skills Section - Compact */
