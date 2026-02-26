@@ -82,14 +82,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px; /* Reduced side padding, controlled by max-width */
-    max-width: 1200px;
+    padding: 0 20px;
+    max-width: 1000px; /* Match section width */
     margin: 0 auto;
     position: relative;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 100%; /* Take full width of parent (1000px) */
 }
 
 .code-block {
@@ -560,11 +560,12 @@ body {
 
     /* Headings */
     h2 {
-        font-size: 14pt;
+        font-size: 16pt; /* Increased size slightly */
+        font-family: "Georgia", "Times New Roman", serif !important; /* Force Serif */
         text-transform: uppercase;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #000; /* Black border */
         margin-bottom: 10px;
-        color: #000;
+        color: #000 !important; /* Force Black */
         font-weight: bold;
         letter-spacing: 0.05em;
     }
@@ -590,20 +591,20 @@ body {
 
     .timeline-header h3 {
         font-size: 11pt;
-        color: #000;
+        color: #000 !important;
         font-weight: bold;
         margin-right: 10px;
     }
 
     .date {
         font-size: 9pt;
-        color: #000;
+        color: #000 !important;
         margin-left: auto;
     }
 
     .company {
         font-size: 10pt;
-        color: #333;
+        color: #000 !important; /* Force Black */
         font-weight: bold;
         margin-bottom: 2px;
     }
@@ -652,13 +653,13 @@ body {
     .project-header h3 {
         font-size: 11pt;
         font-weight: bold;
-        color: #000;
+        color: #000 !important;
         margin-right: 10px;
     }
 
     .project-subheader {
         font-size: 8pt;
-        color: #444;
+        color: #000 !important; /* Force Black */
         display: inline-block;
         margin: 0;
         font-weight: normal;
@@ -667,14 +668,14 @@ body {
 
     .project-card p {
         font-size: 10pt;
-        color: #000;
+        color: #000 !important;
         margin-bottom: 2px;
         text-align: justify;
     }
 
     .tech-stack {
         font-size: 9pt;
-        color: #444;
+        color: #000 !important; /* Force Black */
         font-style: italic;
     }
 
