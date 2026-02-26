@@ -3,229 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Cleber Gabriel Nicolussi Zanin - Desenvolvedor Backend e Analista Financeiro.">
-    <title>Cleber G. N. Zanin | Dev & Finance</title>
+    <title>Cleber Gabriel N. Zanin | Unicorn Dev & Economist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">CGNZ</div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact" class="btn-contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <div class="hero-content">
-                <span class="badge">Economista & Desenvolvedor</span>
-                <h1>Cleber Gabriel N. Zanin</h1>
-                <h2>Unindo <span class="highlight">Expertise Financeira</span> e <span class="highlight">Tecnologia Avançada</span>.</h2>
-                <p>Analista com base sólida em Economia (USP) e desenvolvedor full-cycle. Especialista em criar infraestruturas de dados de baixo custo e alta eficiência para o mercado financeiro.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <button onclick="window.print()" class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Currículo PDF</button>
-                </div>
-            </div>
-             <div class="hero-image">
-                <div class="code-block">
-                    <pre><code>
-class MarketUnicorn:
-    def __init__(self):
-        self.role = "Analista & Dev"
-        self.education = "Economia USP"
-        self.certifications = ["CFG Anbima"]
 
-    def solve_problems(self):
-        return {
-            "finance": "Modelagem DI1 & Backoffice",
-            "tech": "Python, C#, Supabase",
-            "innovation": "AI Agents & Automation"
-        }
-                    </code></pre>
-                </div>
+    <nav class="navbar">
+        <div class="logo">CGNZ<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Trajetória</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#skills">Arsenal</a></li>
+        </ul>
+        <button class="cta-button" onclick="window.print()">
+            <i class="fas fa-file-pdf"></i> Currículo PDF
+        </button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="code-badge">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span>persona.json</span>
             </div>
+            <pre class="code-block">
+<span class="keyword">class</span> <span class="class-name">MarketUnicorn</span>(Economist, Developer):
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.background = <span class="string">"USP Economics"</span>
+        self.stack = [<span class="string">"Python"</span>, <span class="string">"Supabase"</span>, <span class="string">"Finance"</span>]
+        self.certification = <span class="string">"Anbima CFG"</span>
+
+    <span class="keyword">def</span> <span class="function">solve_pain</span>(self):
+        <span class="keyword">return</span> <span class="string">"Automation + Alpha Generation"</span>
+            </pre>
+            <h1>Cleber Gabriel N. Zanin</h1>
+            <p class="subtitle">Economista & Desenvolvedor Sênior</p>
+            <p class="description">
+                Unindo <strong>Expertise Financeira</strong> robusta com <strong>Engenharia de Software</strong> de ponta.
+                De modelos VECM e DSGE à arquiteturas escaláveis com Supabase e Python.
+            </p>
+            <div class="social-links">
+                <a href="mailto:clebergnz@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/cgn-zanin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/cgnzanin" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Logos Section for Web Display -->
+        <div class="hero-logos">
+             <img src="assets/usp.svg" alt="USP Logo" class="institution-logo usp-logo">
+             <img src="assets/anbima.svg" alt="Anbima Logo" class="institution-logo anbima-logo">
         </div>
     </header>
 
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>Sou um economista formado pela <strong>USP</strong> que transcendeu a análise tradicional para se tornar um desenvolvedor de software de alto nível. Minha trajetória começou na pesquisa acadêmica e evoluiu rapidamente para o mercado financeiro, onde hoje atuo na intersecção entre <strong>Gestão de Fundos</strong> e <strong>Engenharia de Dados</strong>.</p>
-                        <p>Com certificação <strong>CFG da Anbima</strong> e vasta experiência em backoffice, construí infraestruturas robustas utilizando <strong>Supabase, Python e GitHub Actions</strong>, otimizando custos e automatizando processos complexos como precificação, conciliação e compliance (SCD2). Meu diferencial é entender profundamente tanto a regra de negócio (Fundos 175, taxas, derivativos) quanto a implementação técnica.</p>
-                        <p>Atualmente, sou um entusiasta da Inteligência Artificial, utilizando ferramentas como <strong>Antigravity</strong> e <strong>Claude Code</strong> para maximizar produtividade, além de <strong>NotebookLM</strong> para análise contínua de geopolítica e tendências.</p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Anos no Mercado</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>USP</h3>
-                            <p>Economia</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>CFG</h3>
-                            <p>Certificação Anbima</p>
-                        </div>
-                    </div>
+    <section id="about" class="section">
+        <h2><span class="highlight">01.</span> Sobre Mim</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Sou um economista formado pela <strong>USP</strong> que transcendeu a análise tradicional para se tornar um desenvolvedor de software de alto nível. Minha trajetória começou na pesquisa acadêmica e evoluiu rapidamente para o mercado financeiro, onde hoje atuo na intersecção entre <strong>Gestão de Fundos</strong> e <strong>Engenharia de Dados</strong>.
+                </p>
+                <p>
+                    Com certificação <strong>CFG da Anbima</strong> e vasta experiência, não sou apenas "backoffice" — sou um analista que entende profundamente as dores do Front, Middle e Back Office. Construí infraestruturas robustas utilizando <strong>Supabase, Python e GitHub Actions</strong>, otimizando custos e automatizando processos complexos.
+                </p>
+                <p>
+                    Atualmente, sou um entusiasta da Inteligência Artificial, utilizando ferramentas como <strong>Antigravity e Claude Code</strong> para maximizar produtividade, além de <strong>NotebookLM</strong> para análise contínua de geopolítica e tendências.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2><span class="highlight">02.</span> Trajetória Profissional</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Analista de Dados (Full-time)</h3>
+                    <span class="date">Dez 2023 - Presente</span>
+                </div>
+                <p class="company">Oby Capital · Híbrido</p>
+                <p class="role-desc">
+                    Liderança técnica na infraestrutura da gestora, facilitando a vida do Back, Middle e Front Office através de tecnologia.
+                </p>
+                <ul class="role-bullets">
+                    <li>Desenvolvimento e manutenção de pipelines de dados e esquemas de banco de dados otimizados.</li>
+                    <li>Revisão e otimização de consultas SQL para melhorar a eficiência e monitoramento contínuo de desempenho.</li>
+                    <li>Utilização de scripts e ferramentas (Python/Streamlit) para automatizar tarefas comuns e reduzir risco operacional.</li>
+                    <li>Criação de ferramentas de análise e visualização de dados para gerar insights estratégicos.</li>
+                    <li>Rotina de batimento de fundos, incluindo conciliação de passivos e cálculo de taxas.</li>
+                    <li>Boletagem automatizada de operações de renda fixa e renda variável (Boletador).</li>
+                    <li>Automatização de processos de back-office para maximizar a eficiência operacional.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Analista de Dados (Estágio)</h3>
+                    <span class="date">Ago 2022 - Nov 2023</span>
+                </div>
+                <p class="company">Oby Capital · Ribeirão Preto/SP</p>
+                <p class="role-desc">Início da jornada na automação de processos financeiros.</p>
+                <ul class="role-bullets">
+                    <li>Relatórios financeiros e arquitetura de Data Warehouse.</li>
+                    <li>Apoio na estruturação de processos de dados.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Assistente de Pesquisa</h3>
+                    <span class="date">Mai 2021 - Jul 2022</span>
+                </div>
+                <p class="company">LEPES/USP · Estágio</p>
+                <p class="role-desc">Pesquisa acadêmica e análise econométrica.</p>
+                <ul class="role-bullets">
+                    <li>Aplicação de modelos econométricos e análise de grandes volumes de dados.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2><span class="highlight">03.</span> Projetos em Destaque</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1: Credit Atlas -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-chart-network project-icon"></i>
+                    <h3>Credit Atlas</h3>
+                </div>
+                <div class="project-subheader">GESTÃO DE RISCO & COMPLIANCE</div>
+                <p>
+                    Plataforma centralizada para gestão de ratings de crédito, incluindo emissores, FIDCs e empresas. O sistema oferece uma visão unificada que integra histórico temporal completo, ratings de agências externas e uma infraestrutura robusta para ratings internos. Utiliza lógica <strong>SCD2 (Slowly Changing Dimensions Type 2)</strong> para garantir versionamento absoluto e rastreabilidade, permitindo auditoria completa das alterações de risco ao longo do tempo.
+                </p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>SCD2</span>
+                    <span>Streamlit</span>
+                    <span>Supabase</span>
                 </div>
             </div>
-        </section>
 
-        <section id="experience" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">Trajetória Profissional</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">Dez 2023 - Presente</div>
-                        <div class="timeline-content">
-                            <h3>Analista de Dados (Full-time)</h3>
-                            <span class="company">Oby Capital · Híbrido</span>
-                            <p>Liderança técnica na infraestrutura da gestora.</p>
-                            <ul>
-                                <li>Desenvolvimento de sistemas de automação de backoffice e compliance.</li>
-                                <li>Implementação de pipelines de dados e ferramentas de visualização para gestão de ativos.</li>
-                                <li>Stack: Python, Streamlit, Supabase, C#.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Ago 2022 - Nov 2023</div>
-                        <div class="timeline-content">
-                            <h3>Analista de Dados (Estágio)</h3>
-                            <span class="company">Oby Capital · Ribeirão Preto/SP</span>
-                            <p>Início da jornada na automação de processos financeiros.</p>
-                            <ul>
-                                <li>Relatórios financeiros e arquitetura de Data Warehouse.</li>
-                                <li>Apoio na estruturação de processos de dados.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Mai 2021 - Jul 2022</div>
-                        <div class="timeline-content">
-                            <h3>Assistente de Pesquisa</h3>
-                            <span class="company">LEPES/USP · Estágio</span>
-                            <p>Pesquisa acadêmica e análise econométrica.</p>
-                            <ul>
-                                <li>Aplicação de modelos econométricos e análise de grandes volumes de dados.</li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- Project 2: CurvasPre -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-wave-square project-icon"></i>
+                    <h3>CurvasPre</h3>
+                </div>
+                <div class="project-subheader">MODELAGEM QUANTITATIVA</div>
+                <p>
+                    Matriz de possibilidade para reuniões do Copom baseada na curva de futuros. Utiliza a metodologia <strong>FRA flat forward</strong> para projetar as taxas implícitas entre vértices, permitindo a construção precisa de cenários para a curva DI1 e identificação de oportunidades de arbitragem ou proteção na carteira.
+                </p>
+                <div class="tech-stack">
+                    <span>Math Fin</span>
+                    <span>Python</span>
+                    <span>DI1 Futuro</span>
                 </div>
             </div>
-        </section>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Projetos em Destaque</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-globe-americas"></i>
-                            <h3>Credit Atlas</h3>
-                        </div>
-                        <span class="project-subheader">Gestão de Risco & Compliance</span>
-                        <p>Plataforma centralizada para gestão de ratings de crédito, incluindo emissores, FIDCs e empresas. O sistema oferece uma visão unificada que integra histórico temporal completo, ratings de agências externas e uma infraestrutura robusta para ratings internos. Utiliza lógica SCD2 (Slowly Changing Dimensions Type 2) para garantir versionamento absoluto e rastreabilidade, permitindo auditoria completa das alterações de risco ao longo do tempo.</p>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-chart-line"></i>
-                            <h3>CurvasPre</h3>
-                        </div>
-                        <span class="project-subheader">Modelagem Quantitativa</span>
-                        <p>Matriz de possibilidade para reuniões do Copom baseada na curva de futuros. Utiliza a metodologia FRA flat forward para projetar as taxas implícitas entre vértices, permitindo a construção precisa de cenários para a curva DI1 e identificação de oportunidades de arbitragem ou proteção na carteira.</p>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-robot"></i>
-                            <h3>Boletador</h3>
-                        </div>
-                        <span class="project-subheader">Automação de Backoffice</span>
-                        <p>Ferramenta de automação que integra APIs da Microsoft para agilizar o fluxo de operações. Realiza leitura e envio automático de e-mails, geração de boletas em PDF e comunicação direta com custodiantes e administradores, reduzindo drasticamente o risco operacional e o tempo gasto em tarefas manuais.</p>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-layer-group"></i>
-                            <h3>Dashboards & Infra</h3>
-                        </div>
-                        <span class="project-subheader">Business Intelligence</span>
-                        <p>Ecossistema de visualização de dados desenvolvido com Streamlit e Supabase. Inclui dashboards dinâmicos para conciliação de PL, atribuição de performance, controle de passivos e cálculo de taxas de administração, oferecendo transparência total para a gestão.</p>
-                    </div>
+            <!-- Project 3: Boletador -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-robot project-icon"></i>
+                    <h3>Boletador</h3>
+                </div>
+                <div class="project-subheader">AUTOMAÇÃO DE BACKOFFICE</div>
+                <p>
+                    Ferramenta de automação que integra APIs da Microsoft para agilizar o fluxo de operações. Realiza leitura e envio automático de e-mails, geração de boletas em PDF e comunicação direta com custodiantes e administradores, reduzindo drasticamente o risco operacional e o tempo gasto em tarefas manuais.
+                </p>
+                <div class="tech-stack">
+                    <span>MS Graph API</span>
+                    <span>Python</span>
+                    <span>Automação</span>
                 </div>
             </div>
-        </section>
 
-        <section id="skills" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title">Arsenal Técnico</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-chart-pie"></i> Finanças & Mercado</h3>
-                        <ul>
-                            <li><strong>CFG Anbima</strong> (Certificado)</li>
-                            <li>Fundos 175 & Regulação</li>
-                            <li>Conciliação de Passivos & Taxas</li>
-                            <li>Pre-matching & Backoffice</li>
-                            <li>Econometria & Modelagem</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-brain"></i> Inteligência Artificial</h3>
-                        <ul>
-                            <li>Antigravity & Claude Code</li>
-                            <li>NotebookLM (Pesquisa)</li>
-                            <li>Integração de LLMs</li>
-                            <li>Engenharia de Prompt</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Backend & Dados</h3>
-                        <ul>
-                            <li>Python (Pandas, Streamlit)</li>
-                            <li>C# (.NET Scrapers)</li>
-                            <li>Supabase / PostgreSQL (SCD2)</li>
-                            <li>Apache & Webservers</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Infraestrutura</h3>
-                        <ul>
-                            <li>Github Actions (CI/CD)</li>
-                            <li>Automação de Processos</li>
-                            <li>APIs Microsoft / Graph</li>
-                            <li>Cost-efficiency Architecture</li>
-                        </ul>
-                    </div>
+            <!-- Project 4: Dashboards & Infra -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-server project-icon"></i>
+                    <h3>Dashboards & Infra</h3>
+                </div>
+                <div class="project-subheader">BUSINESS INTELLIGENCE</div>
+                <p>
+                    Ecossistema de visualização de dados desenvolvido com Streamlit e Supabase. Inclui dashboards dinâmicos para conciliação de PL, atribuição de performance, controle de passivos e cálculo de taxas de administração, oferecendo transparência total para a gestão.
+                </p>
+                <div class="tech-stack">
+                    <span>Streamlit</span>
+                    <span>Supabase</span>
+                    <span>SQL</span>
                 </div>
             </div>
-        </section>
 
-        <footer id="contact" class="footer">
-            <div class="container">
-                <h2>Vamos Conversar?</h2>
-                <p>Pronto para transformar a tecnologia da sua gestora.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/cgn-zanin/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/cgnzanin/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="mailto:clebergnz@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                </div>
-                <p class="copyright">&copy; 2024 Cleber Gabriel Nicolussi Zanin.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2><span class="highlight">04.</span> Arsenal Técnico</h2>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <h3><i class="fas fa-chart-line"></i> Finanças & Modelagem</h3>
+                <ul class="skill-list finance-list">
+                    <li>CFG Anbima (Certificado)</li>
+                    <li>Fundos 175 & Regulação</li>
+                    <li>Experiência com modelos VAR e VECM</li>
+                    <li>Conhecimento em modelos DSGE</li>
+                    <li>Experiência com K-means e Hierarchical Clustering</li>
+                    <li>Experiência com VaR e Stress Testing</li>
+                    <li>Modelos de precificação de ativos</li>
+                    <li>Modelos de séries temporais (ARIMA, GARCH)</li>
+                    <li>Conciliação de Passivos & Taxas</li>
+                </ul>
             </div>
-        </footer>
-    </main>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Backend & Dados</h3>
+                <ul class="skill-list">
+                    <li>Python (Pandas, Streamlit)</li>
+                    <li>C# (.NET Scrapers)</li>
+                    <li>Supabase / PostgreSQL (SCD2)</li>
+                    <li>Pre-matching & Backoffice Logic</li>
+                    <li>Apache & Webservers</li>
+                    <li>SQL Optimization</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Inteligência Artificial</h3>
+                <ul class="skill-list">
+                    <li>Antigravity & Claude Code</li>
+                    <li>NotebookLM (Research)</li>
+                    <li>Integração de LLMs</li>
+                    <li>Engenharia de Prompt</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-network-wired"></i> Infraestrutura</h3>
+                <ul class="skill-list">
+                    <li>Github Actions (CI/CD)</li>
+                    <li>Automação de Processos</li>
+                    <li>APIs Microsoft / Graph</li>
+                    <li>Cost-efficiency Architecture</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Projetado & Construído por Cleber Gabriel N. Zanin</p>
+        <div class="footer-logos">
+             <!-- Logos also in footer for style -->
+             <img src="assets/usp.svg" alt="USP Logo" class="institution-logo-sm">
+             <img src="assets/anbima.svg" alt="Anbima Logo" class="institution-logo-sm">
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
