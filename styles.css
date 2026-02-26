@@ -283,19 +283,14 @@ a {
     font-size: 1.5rem;
     color: var(--secondary-color);
 }
-.tags {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.tags span {
-    background-color: #F1F5F9;
-    color: var(--text-color);
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 500;
+.project-subheader {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px; /* Increased from 10px for better breathing room */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block; /* Ensure it takes its own line */
 }
 
 /* Skills Grid */
@@ -529,16 +524,12 @@ a {
         font-size: 11pt !important;
         margin: 5px 0 !important;
     }
-    .tags {
-        margin-top: 5px !important;
-    }
-    .tags span {
-        border: 1px solid #000;
-        padding: 1px 5px !important;
-        border-radius: 3px;
-        font-size: 9pt !important;
-        margin-right: 5px;
-        background: none !important;
+    .project-subheader {
+        font-size: 10pt !important;
+        color: #555 !important;
+        margin-bottom: 5px !important;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 
     /* Skills */
