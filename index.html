@@ -1,314 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&amp;display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Zanin CV</title>
-  </head>
-  <body>
-    <div class="flex-container">
-      <div>
-        <h2 class="no-background">
-          <img
-            alt="Zanin"
-            height="145"
-            src="./assets/images/face.jpg"
-            width="135"
-          />
-        </h2>
-      </div>
-      <div>
-        <h2 class="nome">CLEBER GABRIEL NICOLUSSI ZANIN</h2>
-        <p>
-          Economista entusiasmado por macroeconomia e desenvolvedor com
-          habilidades em data science. Ofereço skills em análise de dados,
-          programação e modelagem econômica para impulsionar a tomada de decisão
-          empresarial.
-        </p>
-      </div>
-    </div>
-    <h2 class="subtitulos">Formação</h2>
-    <div class="formacao-container">
-      <div class="formacao-imagem">
-        <img src="./assets/images/usp-logo.png" alt="Logo USP" width="100" />
-      </div>
-      <div class="formacao-texto">
-        <strong>Universidade de São Paulo (USP)</strong><br />
-        <span
-          >Faculdade de Economia, Administração e Contabilidade de Ribeirão
-          Preto - FEARP</span
-        ><br />
-        <span>Graduação em Ciências Econômicas</span><br />
-        <span>Formando em 2023</span>
-      </div>
-    </div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Cleber Gabriel Nicolussi Zanin - Desenvolvedor Backend e Analista Financeiro.">
+    <title>Cleber G. N. Zanin | Dev & Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">CGNZ</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="btn-contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <span class="badge">Economista & Desenvolvedor</span>
+                <h1>Cleber Gabriel N. Zanin</h1>
+                <h2>Unindo <span class="highlight">Mercado Financeiro</span> e <span class="highlight">Tecnologia</span> de Ponta.</h2>
+                <p>Especialista em infraestrutura de dados para fundos de investimento, automação de backoffice e desenvolvimento backend robusto.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <button onclick="window.print()" class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Currículo PDF</button>
+                </div>
+            </div>
+             <div class="hero-image">
+                <div class="code-block">
+                    <pre><code>
+class FinancialEngineer:
+    def __init__(self):
+        self.experience = "5+ years"
+        self.stack = ["Python", "C#", "Supabase"]
+        self.domain = ["Asset Management", "SCD2"]
 
-    <hr />
-    <h2 class="subtitulos">Experiência de Trabalho</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">Abr/2021 - Jan/2022</div>
-        <div class="timeline-content">
-          <h3>Assistente de Pesquisa - LEPES</h3>
-          <ul>
-            <li>Desenvolvimento de esquemas de banco de dados</li>
-            <li>Realização de operações CRUD para manter a base de dados</li>
-            <li>Monitoramento contínuo do desempenho do banco de dados</li>
-            <li>Manutenção de documentação detalhada sobre estruturas de banco de dados</li>
-          </ul>
+    def build_infrastructure(self):
+        return "Low-cost, High-efficiency"
+                    </code></pre>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
 
-      <div class="timeline-item">
-        <div class="timeline-date">Jan/2022 - Ago/2022</div>
-        <div class="timeline-content">
-          <h3>Analista de dados - LEPES</h3>
-          <ul>
-            <li>Desenvolvimento de esquemas de banco de dados</li>
-            <li>Criador de curso interno voltado à gestão de dados em R</li>
-            <li>Monitoramento contínuo do desempenho do banco de dados</li>
-            <li>Manutenção de documentação detalhada sobre estruturas de banco de dados</li>
-          </ul>
-        </div>
-      </div>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Sou um economista formado pela <strong>USP</strong> que mergulhou fundo no desenvolvimento de software. Com mais de <strong>5 anos de experiência</strong> em gestoras de fundos, transformei a maneira como o backoffice e a análise de dados funcionam.</p>
+                        <p>Minha especialidade é construir infraestruturas robustas e de baixo custo, utilizando tecnologias como <strong>Supabase, Python e Github Actions</strong>. Não apenas escrevo código, mas entendo a lógica financeira por trás de cada linha, o que me permite criar soluções como o <strong>Rating Flow</strong> e sistemas complexos de precificação (Curvas DI1).</p>
+                        <p>Atualmente, sou entusiasta de IA, utilizando ferramentas como Antigravity e Claude Code para acelerar o desenvolvimento e NotebookLM para manter-me atualizado em geopolítica e tecnologia.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>USP</h3>
+                            <p>Economia</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>CFG</h3>
+                            <p>Certificação Anbima</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="timeline-item">
-        <div class="timeline-date">Ago/2022 - atual</div>
-        <div class="timeline-content">
-          <h3>Analista de dados - Oby Capital</h3>
-          <ul>
-            <li>Desenvolvimento de esquemas de banco de dados</li>
-            <li>Revisão e otimização de consultas SQL para melhorar a eficiência</li>
-            <li>Monitoramento contínuo do desempenho do banco de dados</li>
-            <li>Utilização de scripts e ferramentas para automatizar tarefas comuns</li>
-            <li>Desenvolvimento e manutenção de pipelines de dados</li>
-            <li>Utilização de ferramentas de análise e visualização de dados para gerar insights</li>
-            <li>Rotina de batimento de fundos</li>
-            <li>Boletagem de operações de renda fixa e renda variável</li>
-            <li>Automatização de processos para melhorar a eficiência das operações de back-office</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <h2 class="subtitulos">Habilidades</h2>
-    <div class="habilidades-container">
-      <!-- Categoria para habilidades de Programação -->
-      <div class="habilidade-category">
-        <h3>Programação</h3>
-        <hr />
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>R</span>
-            <span>★★★★☆</span>
-          </div>
-          <div class="habilidade-detail">Experiência com ggplot2 e dplyr</div>
-        </div>
-        <!-- Os outros itens para habilidades de Programação permanecem da mesma forma -->
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Python</span>
-            <span>★★★★★</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com Pandas e Scikit-learn
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>PostgreSQL/SQL</span>
-            <span>★★★★☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com queries complexas e otimização
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>HTML5</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Conhecimento em HTML5 e uso de semantic tags
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>CSS</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            CExperiência com Flexbox e Grid Layout
-          </div>
-        </div>
-      </div>
+        <section id="experience" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Trajetória Profissional</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019 - Presente</div>
+                        <div class="timeline-content">
+                            <h3>Analista de Investimentos & Desenvolvedor Sênior</h3>
+                            <span class="company">Gestora de Fundos de Investimento</span>
+                            <p>Liderança na modernização da infraestrutura tecnológica da gestora.</p>
+                            <ul>
+                                <li>Construção de infraestrutura de dados low-cost utilizando <strong>Supabase</strong>, <strong>Python</strong> e <strong>Github Actions</strong>.</li>
+                                <li>Desenvolvimento de ferramentas para automação de backoffice: batimento de cota, PL, pre-matching, performance attribution e conciliação.</li>
+                                <li>Criação de lâminas de fundos automatizadas com HTML/CSS/JS e dados em tempo real.</li>
+                                <li>Implementação de pipelines CI/CD e web scrapers otimizados em <strong>C#</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Categoria para habilidades de Modelagem -->
-      <div class="habilidade-category">
-        <h3>Modelagem</h3>
-        <hr />
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de séries temporais</span>
-            <span>★★★★☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com modelos ARIMA e GARCH
-          </div>
-        </div>
-        <!-- Os outros itens para habilidades de Modelagem permanecem da mesma forma -->
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de precificação de ativos</span>
-            <span>★★★★☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Conhecimento em CAPM e Black-Scholes
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de risco</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com VaR e Stress Testing
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de agrupamento</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com K-means e Hierarchical Clustering
-          </div>
-        </div>
-      </div>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Rating Flow</h3>
+                        </div>
+                        <p>Plataforma completa para gestão de ratings de crédito (empresas, FIDCs, emissões). Possui histórico temporal, integração com ratings externos e sistema robusto de rating interno.</p>
+                        <div class="tags">
+                            <span>SCD2</span>
+                            <span>Versionamento</span>
+                            <span>Templates Dinâmicos</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-bezier-curve"></i>
+                            <h3>CurvasPre</h3>
+                        </div>
+                        <p>Sistema de cálculo de curvas DI1 e matriz de probabilidades para reuniões do Copom. Utiliza FRA flat forward para projeções precisas de juros futuros.</p>
+                        <div class="tags">
+                            <span>Matemática Financeira</span>
+                            <span>Python</span>
+                            <span>Modelagem</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Infraestrutura de Dados</h3>
+                        </div>
+                        <p>Arquitetura de dados escalável para gestoras. Inclui scrapers em C#, automação via Github Actions e visualização de dados dinâmica para posições e riscos.</p>
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>Supabase</span>
+                            <span>Github Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Categoria para Outras habilidades -->
-      <div class="habilidade-category">
-        <h3>Outras</h3>
-        <hr />
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Excel</span>
-            <span>★★★★☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Noções de fórmulas avançadas e VBA
-          </div>
-        </div>
-        <!-- Os outros itens para Outras habilidades permanecem da mesma forma -->
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Power BI</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com criação de dashboards
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Streamlit</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com desenvolvimento de web apps
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Git/Github</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com controle de versão, branch management e pull
-            requests
-          </div>
-        </div>
-      </div>
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Arsenal Técnico</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Backend & Dados</h3>
+                        <ul>
+                            <li>Python (Pandas, NumPy, Streamlit)</li>
+                            <li>C# (.NET for Scrapers)</li>
+                            <li>SQL / Supabase / PostgreSQL</li>
+                            <li>SCD2 (Slowly Changing Dimensions)</li>
+                            <li>Apache & Servidores Web</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Infra & DevOps</h3>
+                        <ul>
+                            <li>Github Actions (CI/CD)</li>
+                            <li>Docker / Containers (Conceitos)</li>
+                            <li>Automação de Processos</li>
+                            <li>Linux / Bash</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend & Web</h3>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Next.js (Básico)</li>
+                            <li>Streamlit Dashboards</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-pie"></i> Finanças & IA</h3>
+                        <ul>
+                            <li>Modelagem Financeira</li>
+                            <li>Certificação CFG Anbima</li>
+                            <li>IA: Antigravity, Claude, NotebookLM</li>
+                            <li>Macroeconomia (USP)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Categoria para habilidades de Macroeconomia -->
-      <div class="habilidade-category">
-        <h3>Macroeconomia</h3>
-        <hr />
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de crescimento</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com modelos Solow e Romer
-          </div>
-        </div>
-        <!-- Os outros itens para habilidades de Macroeconomia permanecem da mesma forma -->
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de previsão</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">
-            Experiência com modelos VAR e VECM
-          </div>
-        </div>
-        <div class="habilidade-item">
-          <div class="habilidade-main">
-            <span>Modelos de equilíbrio geral</span>
-            <span>★★★☆☆</span>
-          </div>
-          <div class="habilidade-detail">Conhecimento em modelos DSGE</div>
-        </div>
-      </div>
-    </div>
+        <footer id="contact" class="footer">
+            <div class="container">
+                <h2>Vamos Conversar?</h2>
+                <p>Estou pronto para elevar o nível da sua infraestrutura financeira.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/cgn-zanin/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/cgnzanin/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="mailto:clebergnz@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                </div>
+                <p class="copyright">&copy; 2024 Cleber Gabriel Nicolussi Zanin.</p>
+            </div>
+        </footer>
+    </main>
 
-    <hr />
-    <h2 class="subtitulos">Entre em contato</h2>
-    <p class="icons-right">
-      <a href="https://www.linkedin.com/in/cgn-zanin/">
-        <img
-          alt="LinkedIn"
-          height="24"
-          src="./assets/images/linkedin.png"
-          width="24"
-        />
-      </a>
-      <a href="https://github.com/cgnzanin/">
-        <img
-          alt="GitHub"
-          height="24"
-          src="./assets/images/github.png"
-          width="24"
-        />
-      </a>
-      <a href="mailto:clebergnz@gmail.com">
-        <img
-          alt="Email"
-          height="24"
-          src="./assets/images/email.png"
-          width="24"
-        />
-      </a>
-      <a href="tel:+5516994029193">
-        <img
-          alt="Phone"
-          height="24"
-          src="./assets/images/phone.png"
-          width="24"
-        />
-      </a>
-    </p>
-    <hr />
-    <footer class="footer-right">
-      <p>© 2023</p>
-    </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
