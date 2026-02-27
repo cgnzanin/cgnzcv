@@ -11,13 +11,6 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-brand">
-            <div class="logo">CGNZ<span>.</span></div>
-            <div class="navbar-logos">
-                <img src="assets/usp.svg" alt="USP Logo" class="nav-institution-logo">
-                <img src="assets/anbima.svg" alt="Anbima Logo" class="nav-institution-logo">
-            </div>
-        </div>
         <ul class="nav-links">
             <li><a href="#about">Sobre</a></li>
             <li><a href="#experience">Trajetória</a></li>
@@ -25,41 +18,56 @@
             <li><a href="#differentiators">Diferenciais</a></li>
             <li><a href="#skills">Arsenal</a></li>
         </ul>
-        <button class="cta-button" onclick="window.print()">
-            <i class="fas fa-file-pdf"></i> Currículo PDF
-        </button>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
-            <div class="code-badge">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span>persona.json</span>
-            </div>
-            <pre class="code-block">
+            <div class="persona-block">
+                <div class="code-badge">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span>persona.json</span>
+                </div>
+                <pre class="code-block">
 <span class="keyword">class</span> <span class="class-name">CleberZanin</span>(Economist, Developer):
     <span class="keyword">def</span> <span class="function">__init__</span>(self):
         self.background = <span class="string">"USP Economics"</span>
-        self.stack = [<span class="string">"Python"</span>, <span class="string">"Supabase"</span>, <span class="string">"Finance"</span>]
+        self.stack = [<span class="string">"Python"</span>, <span class="string">"C#"</span>, <span class="string">"Supabase"</span>, <span class="string">"PostgreSQL"</span>, <span class="string">"Streamlit"</span>, <span class="string">"Github Actions"</span>, <span class="string">"MS Graph API"</span>]
         self.certification = <span class="string">"Anbima CFG"</span>
+        self.focus = [<span class="string">"Gestão de Fundos"</span>, <span class="string">"Eng. de Software"</span>]
+        self.tools = [<span class="string">"Antigravity"</span>, <span class="string">"Claude"</span>, <span class="string">"MCP"</span>, <span class="string">"Apache"</span>]
+        self.differentials = [<span class="string">"Analytical Thinking"</span>, <span class="string">"Eng. de Produção"</span>, <span class="string">"Human Skills"</span>, <span class="string">"IA & Produtividade"</span>]
 
     <span class="keyword">def</span> <span class="function">solve_pain</span>(self):
-        <span class="keyword">return</span> <span class="string">"Automation + Alpha Generation"</span>
-            </pre>
-            <h1>Cleber Gabriel N. Zanin</h1>
-            <p class="subtitle">Economista & Desenvolvedor Sênior</p>
+        <span class="keyword">return</span> <span class="string">"Ownership end-to-end · Scale · Edge"</span>
+                </pre>
+            </div>
+            <div class="hero-name-row">
+                <h1>Cleber Gabriel N. Zanin</h1>
+                <div class="hero-pdf-wrap">
+                    <button class="cta-button hero-cta" onclick="window.print()">
+                        <i class="fas fa-file-pdf"></i> Currículo PDF
+                    </button>
+                </div>
+            </div>
+            <div class="subtitle-row">
+                <p class="subtitle">Economista & Desenvolvedor Sênior</p>
+                <div class="hero-institution-logos">
+                    <img src="assets/usp.svg" alt="USP" class="hero-institution-logo">
+                    <img src="assets/anbima.svg" alt="Anbima" class="hero-institution-logo">
+                </div>
+                <div class="social-links">
+                    <a href="mailto:clebergnz@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/cgn-zanin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/cgnzanin" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/5516994029193" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
             <p class="description">
                 Unindo <strong>Expertise Financeira</strong> robusta com <strong>Engenharia de Software</strong> de ponta.
                 De modelos VECM e DSGE à arquiteturas escaláveis com Supabase e Python.
             </p>
-            <div class="social-links">
-                <a href="mailto:clebergnz@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/cgn-zanin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/cgnzanin" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://wa.me/5516994029193" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
         </div>
 
         <!-- Logos Section for Print Display Only (Hidden on Web via CSS) -->
@@ -80,7 +88,7 @@
                     Mais do que código, entrego <strong>eficiência operacional</strong>. Transito entre times técnicos e de negócios, traduzindo necessidades complexas de Front, Middle e Back Office em infraestruturas robustas (Python, Supabase, CI/CD) e decisões baseadas em dados.
                 </p>
                 <p>
-                    <strong>IA como alavanca</strong>: Utilizo ferramentas de ponta (Antigravity, Claude Code, NotebookLM) não apenas para codar mais rápido, mas para acelerar a tomada de decisão e a análise de cenários geopolíticos, mantendo sempre o senso crítico e a validação rigorosa dos outputs.
+                    <strong>IA como alavanca</strong>: Utilizo ferramentas de ponta (Antigravity, Claude Code, NotebookLM) não apenas para codar mais rápido, mas para organização e tomada de decisão, mantendo sempre o senso crítico e a validação rigorosa dos outputs.
                 </p>
             </div>
         </div>
@@ -277,7 +285,7 @@
                 <h3><i class="fas fa-brain"></i> Inteligência Artificial</h3>
                 <ul class="skill-list">
                     <li>Antigravity & Claude Code</li>
-                    <li>NotebookLM (Research)</li>
+                    <li>NotebookLM (Organização & Research)</li>
                     <li>Integração de LLMs</li>
                     <li>Engenharia de Prompt</li>
                 </ul>
@@ -298,11 +306,6 @@
 
     <footer class="footer">
         <p>Projetado & Construído por Cleber Gabriel N. Zanin</p>
-        <div class="footer-logos">
-             <!-- Logos also in footer for style -->
-             <img src="assets/usp.svg" alt="USP Logo" class="institution-logo-sm">
-             <img src="assets/anbima.svg" alt="Anbima Logo" class="institution-logo-sm">
-        </div>
     </footer>
 
     <script src="script.js"></script>
